@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    font-size: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+    font-size: 50px;
+    background-color: rgba(0, 0, 255, 0.854);
+    color: white;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 3px black;
+    box-shadow: 1px 1px 4px black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+    outline: none;
+    background-color: rgba(241, 239, 239, 0.841);
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black inset;
+    text-align: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button{
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 255, 0.707);
+    color: white;
+    width: 80px;
+    margin-left: 3px;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover{
+    background-color: rgba(0, 0, 255, 0.854);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    padding-top: 10vh;
+}
+.taskDiv{
+    margin: 10px 0px;
+    min-width: 22vw;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 3vw;
+}
+.tasksDiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 2px;
+    min-height: 20vh;
+}
+.nameDiv{
+    min-width: 16vw;
+    min-height: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.707);
+    border-radius: 5px;
+}
+.nameDiv:hover{
+    background-color: rgba(0, 0, 255, 0.854);
+}
+.logosDiv{
+    min-width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3vw;
+    margin-left: 2px;
+    background-color: rgba(255, 0, 0, 0.707);
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px black;
+}
+.logosDiv:hover{
+    background-color: red;
+}
+.logo{
+    font-size: 30px;
+}
+@media screen and (max-width: 420px) {
+    .formDiv form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .nameDiv{
+        padding: 3px;
+    }
 }
